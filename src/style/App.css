@@ -164,4 +164,9 @@ html {
   align-items: center;
   justify-content: center;
   color: #afadad;
+  transition: all 1s;
+}
+
+.RestartButton:active {
+  box-shadow: inset 0px 4px 24px #0B0B0B;  
 }

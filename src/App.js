@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './style/App.css';
 import { Toaster, toast } from 'react-hot-toast';
 
