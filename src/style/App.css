@@ -1,0 +1,167 @@
+html {
+  overflow: hidden;
+}
+
+.BaseContainer {
+  width: 100vw;
+  height: 100vh;
+}
+
+.MainContainer {
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  background-color: #171717;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.GameBox {
+  display: grid;
+  margin: 5em;
+  width: 50vh;
+  height: 50vh;
+  background-color: #171717;
+}
+
+.Box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 10vh;
+  height: 10vh;
+  border-radius: 100%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -2px -4px 4px rgba(75, 75, 75, 0.25);
+  background-color: #171717;
+  transition: all 1s;
+}
+
+.Box:active {
+  box-shadow: inset 0px 4px 24px #0B0B0B;  
+}
+
+.o {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 100%;
+  background: #C3073F;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.5s;
+}
+
+.inner-o {
+  width: 4vh;
+  height: 4vh;
+  background: #171717;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 100%;
+}
+
+.x {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6vh;
+  height: 6vh;
+  transition: all 0.5s;
+}
+
+.first-line, .second-line{
+  position: absolute;
+  height: 1vh;
+  width: 6vh;
+  background: #29B6F6;
+  border-radius: 14px;
+}
+
+.first-line {
+  transform: rotate(-135deg);
+  transition: all 0.5s;
+
+}
+
+.second-line {
+  transform: rotate(135deg);
+  transition: all 0.5s;
+
+}
+
+.circle {
+  border-radius: 100%;
+  background: #525252;
+  width: 2vh;
+  height: 2vh;
+}
+
+.Message {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.50);
+  display: none;
+  align-items: center;
+  z-index: 20;
+  justify-content: center;
+}
+
+.Player1 {
+  width: 30vw;
+  height: 30vh;
+  background-color: #171717;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 2em;
+}
+
+.Player1 h1 {
+  margin-top: 0;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2vw;
+  text-align: center;
+  color: #E90045;
+}
+
+.Player1 div {
+  width: 80%;
+  height: 25%;
+  margin: 0 auto;
+  background: #171717;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 2px -4px 4px rgba(75, 75, 75, 0.25);
+  border-radius: 2em;
+  text-align: center;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5vw;
+  text-align: center;
+  color: #EAE6E6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.EmptyMessage {
+  z-index: 0;
+}
+
+.RestartButton {
+  width: 10em;
+  height: 7vh;
+  background-color: #171717;
+  border-radius: 2em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 2px -4px 4px rgba(75, 75, 75, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #afadad;
+}
